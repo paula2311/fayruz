@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>انشاء حساب</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+  <style>
+ *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        direction: rtl;
+    }
+    /* body{
+        background-color: hsl(205.06deg 51.63% 30%);
+    } */
+    body{
+        background-color: #e7bad7;
+    }
+    a .logo{
+        width: 80px;
+        border-radius: 50%;
+    }
+.container{
+            display: flex ;
+            align-items: center;
+        }
+.container .img img{
+        width: 85%;
+       }
+       
+
+.login {
+  width: 400px;
+  margin: 50px auto;
+  background-color: #e7bad7;
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #e7bad7;
+  border: 5px solid #FFf;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"]  {
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+input:focus,
+button:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+  </style>
+</head>
+
+<body>
+    <!--nav bar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#" ><img src="fyruz1.png" class="logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+  <div class="navbar-nav ">
+      
+    <a class="nav-link active" href="index.html"><h4>الرئيسية</h4> <span class="sr-only">(current)</span></a>
+    <a class="nav-link" href="login.html"><h4>تسجيل الدخول</h4></a>
+    <a class="nav-link" href="signup.html" > <h4>انشاء حساب</h4></a>
+    <!-- <a class="nav-link" href="#"> <h4>حجز المدرسين</h4></a> -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <h4>حجز المدرسين</h4>
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="muhamed.html">أ/ محمد شعبان</a>
+        <a class="dropdown-item" href="#">أ/مصطفي عثمان</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">أ/احمد </a>
+      </div>
+    </li>
+  </div>
+  </div>
+</nav>
+
+<div class="container">   
+    <div class="img"><img src="fyruz1.png" alt=""></div>
+	<div class="login">
+      <h1>Sign Up</h1>
+      <form>
+        <label for="f">First Name</label>
+        <input type="text" id="f" name="username" required>
+
+        <label for="l">Last Name </label>
+        <input type="text" id="l" name="username" required>
+
+        <label for="address">Address </label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="num">Phone Number </label>
+        <input type="number" id="num" name="number" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="cp">Co-Password</label>
+        <input type="password" id="cp" name="co-password" required>
+
+        <button type="submit " class="btn btn-secondary">Create</button>
+      </form>
+    </div>
+</div> 
+
+
+ <script src="js/popper.min.js"></script>
+ <script src="js/jquery-3.7.0.min.js"></script>
+ <script src="js/bootstrap.js"></script>
+</body>
+</html>

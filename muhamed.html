@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>حجز المدرسين</title>
+    
+<Style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        direction: rtl;
+    }
+    /* body{
+        background-color: hsl(205.06deg 51.63% 30%);
+    } */
+    body{
+        background-color: #fff
+    }
+    a .logo{
+        width: 80px;
+        border-radius: 50%;
+    }
+    .ff{
+        border: 5px solid #e7bad7;
+       
+
+    }
+    h2{
+            color: #624073;
+            text-align: center;
+        }
+    .content {
+            border: 5px solid #fff;
+        }
+        .content h4 {
+            color: #624073;
+        }
+        .content p {
+          
+            font-size: 20px;
+        }
+        .content .flex {
+            display: flex;
+            /* align-items: center; */
+            margin: 10px;
+            padding: 10px;
+        }
+        .ff{
+            padding: 10px 15px;
+        }
+        .bt{
+            display: inline-block;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            border: 1px solid transparent;
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: 0.25rem;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+        .bt:hover, .bt:focus {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .bt:focus{
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+        .gender{
+            display: flex;
+        }
+        .gender label, .gender input{
+            margin-left: 5px;
+        }
+</Style>
+</head>
+<body>
+    
+    <!--nav bar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#" ><img src="fyruz1.png" class="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+    <div class="navbar-nav ">
+        
+      <a class="nav-link active" href="index.html"><h4>الرئيسية</h4> <span class="sr-only">(current)</span></a>
+      <a class="nav-link" href="login.html"><h4>تسجيل الدخول</h4></a>
+      <a class="nav-link" href="signup.html" > <h4>انشاء حساب</h4></a>
+      <!-- <a class="nav-link" href="#"> <h4>حجز المدرسين</h4></a> -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <h4>حجز المدرسين</h4>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="muhamed.html">أ/ محمد شعبان</a>
+          <a class="dropdown-item" href="#">أ/مصطفي عثمان</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">أ/احمد </a>
+        </div>
+      </li>
+    </div>
+    </div>
+</nav>
+
+<div class="container">
+     <div class="head"><h2>حجز المجموعات</h2></div>
+     <div class="ff">
+        <form>
+            <div class="form-row">
+
+              <div class="form-group col-md-6">
+                <label for="name">اسم الطالب</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="num">رقم الطالب</label>
+                <input type="number" class="form-control" id="num">
+              </div>
+
+            </div>
+
+            <div class="form-group">
+              <label for="num1">رقم ولي الامر</label>
+              <input type="number" class="form-control" id="num1" >
+            </div>
+
+            <div class="form-row">
+
+              <div class="form-group col-md-6">
+                <label for="day">اليوم </label>
+                <select name="" id="day" class="form-control">
+                    <option value="1">السبت</option>
+                    <option value="2">الاحد</option>
+                    <option value="3">الاثنين</option>
+                    <option value="4">الثلاثاء</option>
+                </select>
+              </div>
+
+              <div class="form-group col-md-4">
+                <label for="inputState">المجموعة</label>
+                <select id="inputState" class="form-control">
+                    <option value="1">السبت الساعة 1</option>
+                    <option value="2">الاحد الساعة 1</option>
+                    <option value="3">الاثنين الساعة 1</option>
+                    <option value="4">الثلاثاء الساعة 1</option>
+                </select>
+              </div>
+
+              <div class="form-group col-md-4">
+                <label for="">النوع: </label>
+                <div class="gender">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="m" value="option1" >
+                        <label class="form-check-label" for="m">
+                          ذكر
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="f-m" value="option1" >
+                        <label class="form-check-label" for="f-m">
+                         أنثي
+                        </label>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+            <button type="submit" class="bt btn-secondary" >حجز</button>
+          </form>
+     </div>
+</div>
+
+
+<!--footer-->
+<section class="">
+    <!-- Footer -->
+    <footer class="text-center text-white mt-5 bg-secondary" >
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: CTA -->
+        <section class="">
+          <p class="d-flex justify-content-center align-items-center">
+            <a href="https://www.facebook.com/profile.php?id=100063516506377" target="_blank" class=" btn-outline-light "> 
+              <h5>تواصل معنا</h5>
+            </a>
+          </p>
+        </section>
+        <!-- Section: CTA -->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 حقوق النشر:
+        <a class="text-warning href="index.html">فيروز</a>
+        
+        <div class="paula">Designed By: <span><a href="https://www.facebook.com/paula.essam.56" target="_blank" class="text-warning">Eng/ Paula Essam</a></span>
+           & <span><a href="https://www.facebook.com/abdo0m" target="_blank" class="text-warning">Eng/ Abdo Mohamed</a></span> </div>
+  
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </section>
+<script src="js/popper.min.js"></script>
+<script src="js/jquery-3.7.0.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- 
+<div class="flex">
+    <h4><label for="">اليوم : </label></h4> 
+    <p>
+        <select name="" id="">
+              <option value="">السبت</option>
+              <option value="">الاحد</option>
+              <option value="">الاثنين</option>
+              <option value="">الثلاثاء</option>
+              <option value="">الاربعاء</option>
+              <option value="">الخميس</option>
+              <option value="">الجمعة</option>
+        </select>
+    </p>     
+
+    <h4><label for="">المجموعة : </label></h4> 
+    <p>
+        <select name="" id="">
+              <option value=""> السبت الساعة 1</option>
+              <option value="">الاحد الساعة 2</option>
+              <option value="">الاثنين الساعة 3</option>
+              <option value="">الثلاثاء الساعة 4</option>
+              <option value="">الاربعاء الساعة 4</option>
+              <option value="">الخميس الساعة 6</option>
+              <option value="">الجمعة الساعة 5</option>
+        </select>
+    </p>        
+</div> -->
