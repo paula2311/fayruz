@@ -12,17 +12,15 @@
             margin: 0;
             box-sizing: border-box;
             direction: rtl;
+            color: #fff;
         }
-        /* body{
-            background-color: hsl(205.06deg 51.63% 30%);
-        } */
+        body{
+            background-color: #235474;
+        }
         
         a .logo{
             width: 80px;
             border-radius: 50%;
-        }
-        .fi{
-            background-color: #e7bad7;
         }
         .container.fs-sec{
             display: flex ;
@@ -60,7 +58,7 @@
 
 <!--nav bar-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-<a class="navbar-brand" href="#" ><img src="fyruz1.png" class="logo"></a>
+<a class="navbar-brand" href="#" ><img src="img/fyruz1.png" class="logo"></a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
 </button>
@@ -90,100 +88,55 @@
 <section class="fi">
 <div class="container fs-sec">
      <div class="text">
-        <h2>مكتبة <span style="color: #624073;"> فيروز</span></h2>
+        <h2>مكتبة <span style="color: #fbe500;"> فيروز</span></h2>
         <h4>كل كتبك في مكان واحد</h4>
-        <br>
-        <a type="button" class="btn btn-secondary" href="#cards">تصفح جميع الكتب</a>
     </div>
-     <div class="img"><img src="fyruz1.png" ></div>
+     <div class="img"><img src="img/fyruz1.png" ></div>
 </div>
 </section>
-<!-- <br> <br> <br> <br> <br> <br> <br> <br> <br>  -->
 
-<!--cards-->
-<div class="container" id="cards">
+  <!--slider-->
+<div class="container w-50">
   <div class="text-center m-5">
-      <h1 style="color: #624073;">جميع الكتب : </h1>
+      <h3 style="color: #fbe500;">الكتب</h3>
       <p>مع فيروز ستجد جميع الكتب </p>
+      <h3>اختر المرحلة👇</h3>
   </div>
-        <div class="row">
-          <div class="col-lg-4 p-1 col-md-6 col-sm-12">
-              <div class="card" style="width: 18rem;" >
-                  <img src="fyruz1.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">اسم الكتاب : </h5>
-                    <p class="card-text">Some quick example text to build on the اسم الكتاب :  and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-secondary">اطلب الأن !</a>
-                  </div>
-                </div>
-          </div>
 
-          <div class="col-lg-4 p-1 col-md-6 col-sm-12">
-              <div class="card" style="width: 18rem;">
-                  <img src="fyruz1.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">اسم الكتاب : </h5>
-                    <p class="card-text">Some quick example text to build on the اسم الكتاب :  and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-secondary">اطلب الأن !</a>
-                  </div>
-                </div>
-          </div>
-
-          <div class="col-lg-4 p-1 col-md-6 col-sm-12">
-              <div class="card" style="width: 18rem;">
-                  <img src="fyruz1.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">اسم الكتاب : </h5>
-                    <p class="card-text">Some quick example text to build on the اسم الكتاب :  and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-secondary">اطلب الأن !</a>
-                  </div>
-                </div>
-          </div>
-
-          <div class="col-lg-4 p-1 col-md-6 col-sm-12">
-              <div class="card"style="width: 18rem;" >
-                  <img src="fyruz1.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">اسم الكتاب : </h5>
-                    <p class="card-text">Some quick example text to build on the اسم الكتاب :  and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-secondary">اطلب الأن !</a>
-                  </div>
-                </div>
-          </div>
-
-          <div class="col-lg-4 p-1 col-md-6 col-sm-12">
-              <div class="card" style="width: 18rem;">
-                  <img src="fyruz1.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">اسم الكتاب : </h5>
-                    <p class="card-text">Some quick example text to build on the اسم الكتاب :  and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-secondary">اطلب الأن !</a>
-                  </div>
-                </div>
-          </div>
-
-          <div class="col-lg-4 p-1 col-md-6 col-sm-12">
-              <div class="card" style="width: 18rem;" >
-                  <img src="fyruz1.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">اسم الكتاب : </h5>
-                    <p class="card-text">Some quick example text to build on the اسم الكتاب :  and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-secondary">اطلب الأن !</a>
-                  </div>
-                </div>
-          </div>
- 
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="border: #fbe500 solid 7px ; border-radius: 15px;">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="primary.html"><img style="border-radius: 10px;" src="img/p.png" class="d-block w-100" alt="..."></a>
+        </div>
+        <div class="carousel-item">
+          <a href="middle.html"><img style="border-radius: 10px;" src="img/m.png" class="d-block w-100" alt="..."></a>
+        </div>
+        <div class="carousel-item">
+          <a href="secondary.html"><img style="border-radius: 10px;" src="img/s.png" class="d-block w-100" alt="..."></a>
+        </div>
       </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
 </div>
-
-
-
 
 
 <!--footer-->
 <section class="">
   <!-- Footer -->
-  <footer class="text-center text-white mt-5 bg-secondary" >
+  <footer class="text-center text-white mt-5" style="background-color: #0a4275;" >
     <!-- Grid container -->
     <div class="container p-4 pb-0">
       <!-- Section: CTA -->
@@ -201,10 +154,10 @@
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2023 حقوق النشر:
-      <a class="text-warning href="index.html">فيروز</a>
+      <a href="https://www.facebook.com/profile.php?id=100063516506377" target="_blank" class="text-warning">فيروز</a>
       
-      <div class="paula">Designed By: <span><a href="https://www.facebook.com/paula.essam.56" target="_blank" class="text-warning">Eng/ Paula Essam</a></span>
-         & <span><a href="https://www.facebook.com/abdo0m" target="_blank" class="text-warning">Eng/ Abdo Mohamed</a></span> </div>
+      <div class="paula">Designed By: <span><a href="https://www.facebook.com/paula.essam.56" target="_blank" style="color: #fbe500;">Eng/ Paula Essam</a></span>
+         & <span><a href="https://www.facebook.com/abdo0m" target="_blank" style="color: #fbe500;">Eng/ Abdo Mohamed</a></span> </div>
 
     </div>
     <!-- Copyright -->

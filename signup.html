@@ -9,12 +9,11 @@
         margin: 0;
         box-sizing: border-box;
         direction: rtl;
+        color: #fbe500;
     }
-    /* body{
-        background-color: hsl(205.06deg 51.63% 30%);
-    } */
+
     body{
-        background-color: #e7bad7;
+        background-color: #235474;
     }
     a .logo{
         width: 80px;
@@ -32,11 +31,11 @@
 .login {
   width: 400px;
   margin: 50px auto;
-  background-color: #e7bad7;
+  background-color: #235474;
   padding: 50px;
   border-radius: 5px;
-  box-shadow: 0px 0px 10px #e7bad7;
-  border: 5px solid #FFf;
+  box-shadow: 0px 0px 10px #235474;
+  border: 5px solid #fbe500;
 }
 
 h1 {
@@ -85,9 +84,9 @@ button:focus {
 </head>
 
 <body>
-    <!--nav bar-->
+ <!--nav bar-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#" ><img src="fyruz1.png" class="logo"></a>
+  <a class="navbar-brand" href="#" ><img src="img/fyruz1.png" class="logo"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
   <span class="navbar-toggler-icon"></span>
   </button>
@@ -97,7 +96,7 @@ button:focus {
     <a class="nav-link active" href="index.html"><h4>الرئيسية</h4> <span class="sr-only">(current)</span></a>
     <a class="nav-link" href="login.html"><h4>تسجيل الدخول</h4></a>
     <a class="nav-link" href="signup.html" > <h4>انشاء حساب</h4></a>
-    <!-- <a class="nav-link" href="#"> <h4>حجز المدرسين</h4></a> -->
+    <a class="nav-link" href="user-acc.html"> <h4>حساب </h4></a>
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <h4>حجز المدرسين</h4>
@@ -111,10 +110,10 @@ button:focus {
     </li>
   </div>
   </div>
-</nav>
-
+  </nav>
+<!--form-->
 <div class="container">   
-    <div class="img"><img src="fyruz1.png" alt=""></div>
+    <div class="img"><img src="img/fyruz1.png" alt=""></div>
 	<div class="login">
       <h1>Sign Up</h1>
       <form>
@@ -136,7 +135,7 @@ button:focus {
         <label for="cp">Co-Password</label>
         <input type="password" id="cp" name="co-password" required>
 
-        <button type="submit " class="btn btn-secondary">Create</button>
+        <button type="submit " class="btn" style="background-color: #fbe500; color: #235474; font-weight: bold;">Create</button>
       </form>
     </div>
 </div> 
