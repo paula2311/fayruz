@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>المدرس</title>
+
+    <style>
+         *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            direction: rtl;
+        }
+        
+        a .logo{
+            width: 80px;
+            border-radius: 50%;
+        }
+        .gender{
+            display: flex;
+        }
+        .gender label, .gender input{
+            margin-left: 5px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        thead {
+            background-color: #235474;
+            color: #fbe500;
+        }
+
+        /* tr:nth-child(even) {
+            background-color: #235474;
+            color: #fbe500;
+        } */
+    </style>
+</head>
+<body>
+    
+<!--nav bar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#" ><img src="img/logo.png" class="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+    <div class="navbar-nav ">
+        
+      <a class="nav-link active" href="index.html"><h4>الرئيسية</h4> <span class="sr-only">(current)</span></a>
+      <a class="nav-link" href="login.html"><h4>تسجيل الدخول</h4></a>
+      <a class="nav-link" href="signup.html" > <h4>انشاء حساب</h4></a>
+      <a class="nav-link" href="user-acc.html"> <h4>حساب </h4></a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <h4>حجز المدرسين</h4>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="muhamed.html">أ/ محمد شعبان</a>
+          <a class="dropdown-item" href="#">أ/مصطفي عثمان</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">أ/احمد </a>
+        </div>
+      </li>
+    </div>
+    </div>
+</nav>
+    
+<div class="container">
+    <form>
+        <div class="form-row">
+         
+          <div class="form-group col-md-4">
+            <label for="inputState">اسم المدرس</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">اليوم</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">المجموعة</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="">النوع: </label>
+            <div class="gender">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="m" value="option1" >
+                    <label class="form-check-label" for="m">
+                      شباب
+                </label>
+            </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="f-m" value="option1" >
+                    <label class="form-check-label" for="f-m">
+                     بنات
+                    </label>
+                </div>
+            </div>
+          </div>
+          
+        </div>
+       
+        <button type="submit" class="btn btn-warning">بحث</button>
+      </form>
+      
+      
+</div>
+
+
+<!--table-->
+<div class="container">
+    <table>
+        <thead>
+          <tr>
+            <th>اسم الطالب</th>
+            <th>اليوم</th>
+            <th>المجموعة</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>بولا عصام</td>
+            <td>السبت</td>
+            <td>الساعة 1</td>
+          </tr>
+          <tr>
+            <td>عبدالرحمن محمد</td>
+            <td>السبت</td>
+            <td>الساعة 1</td>
+          </tr>
+          <tr>
+            <td>احمد سيد</td>
+            <td>السبت</td>
+            <td>الساعة 1</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+
+<script src="js/popper.min.js"></script>
+<script src="js/jquery-3.7.0.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
